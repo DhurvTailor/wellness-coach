@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy lifestyel</title>
+    <link rel="shortcut icon" href="project_img/clipart1943207.png" type="image/x-icon">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="project_img/THE HEALTH & WELLNESS .mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="overlay"></div>
+    </div> 
+     <div class="banner">
+        <div class="navbar">
+            <img src="project_img/logo.png" alt="Logo" class="logo"> 
+         
+   
+        </div>
+         <div class="title">
+            <h1>TODAY SET YOUR GOAL</h1>
+            <p>Nothing is more important than health, health is more important than everything.</p>
+        </div> 
+    
+       
+
+    <!-- Buttons -->
+    <div class="center-container">
+        <button type="button" class="open-button" id="btn1"><span></span>Join Now</button>
+        <button type="button" class="open-button" id="btn2" ><span></span>Book a Damo</button>
+    </div>
+
+    <!-- Login Form -->
+    <div id="form1" class="loginForm-popup">
+        <div class="loginForm-container">
+            <span class="close" onclick="closeForm('form1')">&times;</span>
+            <h2>Login Here</h2>
+            <form id="loginForm" onsubmit="return login(this);">
+                <img src="project_img/user.png" alt="User Image" class="user-img">
+                <input class="loginFormInput" type="text" id="username" name="username" required placeholder="Enter your Username">
+                <input class="loginFormInput" type="password" id="password" name="password" required placeholder="Enter your Password">
+                <button type="submit" class="loginBtn">Login</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <!-- Trial Form -->
+    <div id="form2" class="trialForm-popup">
+        <div class="trialForm-container">
+            <span class="close" onclick="closeForm('form2')">&times;</span>
+            <h2>Free Trial</h2>
+            <form id="trialForm" onsubmit="return trial(this);">
+                <img src="project_img/trial.png" alt="Trial Image" class="trialuser-img">
+                <input class="freeTrialInput" type="text" id="firstName" name="firstName" required placeholder="Enter your first name">
+                <input class="freeTrialInput" type="text" id="lastName" name="lastName" required placeholder="Enter your last name">
+                <input class="freeTrialInput" type="email" id="email" name="email" required placeholder="Enter your email">
+                <input class="freeTrialInput" type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                <input class="freeTrialInput" type="text" id="streetAddress" name="streetAddress" required placeholder="Enter your complete address">
+                <fieldset class="gender-options" id="gender">
+                    <legend class="visually-hidden">Gender</legend>
+                    <label><input type="radio" name="gender" value="male" required> Male</label>
+                    <label><input type="radio" name="gender" value="female"> Female</label>
+                    <label><input type="radio" name="gender" value="other"> Other</label>
+                </fieldset>
+                <textarea id="goals" class="freeTrialInput" name="goals" placeholder="Describe your health goals..." required></textarea>
+                <button type="submit" class="freeBtn">Submit</button>
+            </form>
+        </div>
+    </div>
+    
+   
+
+    <script src="index.js"></script>
+</body>
+</html>

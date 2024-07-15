@@ -1,0 +1,99 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness Coach Healthcare</title>
+    <!-- Link to Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="help.css">
+</head>
+<body>
+     <div class="banner">
+        <div class="navbar">
+            <img src="project_img/logo.png" alt="Logo" class="logo">
+        </div> 
+        
+        <div class="title">
+             <h1>How can we help you ?</h1> 
+            <p><br>Need assistance? Our Help & Support section is here to provide you with the information and guidance you need. <br>Whether you're setting up an account, resetting your password, booking a demo, or contacting support, we've got you covered.</p>
+        </div>
+   
+
+    <main>
+        <section class="help-section">
+           
+<div class="box-container">
+    <div class="box" onclick="openMap()">
+        <i class="fas fa-map"></i>
+        <h3>OUR MAIN OFFICE</h3>
+        <h4>Kotputli, Rajasthan</h4>
+    </div>
+               
+<div class="box" onclick="openFax()">
+    <i class="fas fa-fax"></i>
+    <h3>FAX</h3>
+    <h4>1248050443</h4>
+</div>
+                <div class="box" onclick="openEmailClient('support@example.com')">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Contact Support</h3>
+                    <h4>Email us for assistance</h4>
+                </div>
+                <div class="box" onclick="openPhoneDialer('9521634141')">
+                    <i class="fas fa-headset"></i>
+                    <h3>Contact Support</h3>
+                    <h4>Get in touch with us</h4>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+    <footer>
+        <p>&copy; 2024 Wellness Coach Healthcare</p>
+    </footer>
+
+
+
+
+
+    <script>
+        function openPhoneDialer(phoneNumber) {
+            window.location.href = 'tel:' + phoneNumber;
+        }
+
+        function openEmailClient(emailAddress) {
+    window.location.href = 'mailto:' + emailAddress;
+}
+
+
+function openMap() {
+    var address = 'Kotputli, Rajasthan'; // Replace with your address
+
+    //  Construct the Google Maps URL
+      var url = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(address);  //encodeURIComponent(address) ek JavaScript function hai jo kisi bhi string ko URL-friendly format mein convert karta hai. //
+
+    //  Open the map in a new window or tab
+    window.open(url, '_blank');
+}
+    
+
+
+function openFax() {
+    var faxNumber = '1248050443'; // Replace with your fax number
+
+    // Construct the fax URL
+    var url = 'tel:' + faxNumber;
+
+    // Open the fax application or service
+    window.open(url, '_blank');
+}
+
+        </script>
+        
+        
+
+</body>
+
+</html>
